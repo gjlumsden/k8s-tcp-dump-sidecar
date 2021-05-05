@@ -5,8 +5,8 @@ Implementation of a Kubernetes Pod with a sidecar container to collect 24-hour r
 
 1. Build the TCP Dump sidecar container using the Dockerfile in the repository
 2. Push the image to your preferred container registry
-3. Update the `deploy.yaml` file to set `image: {{ SERVICE-IMAGE }}` to contain the image you want to collect network traces from when it runs
-4. Update the `deploy.yaml` file to set `image: {{ TCPDUMP-IMAGE }}` to the TCP Dump sidecar image pushed to your container registry
+3. Update the `deployment.yaml` file to set `image: {{ SERVICE-IMAGE }}` to contain the image you want to collect network traces from when it runs
+4. Update the `deployment.yaml` file to set `image: {{ TCPDUMP-IMAGE }}` to the TCP Dump sidecar image pushed to your container registry
 5. Deploy the yaml file using kubectl or your CI/CD pipelines.
 
 ## Notes
