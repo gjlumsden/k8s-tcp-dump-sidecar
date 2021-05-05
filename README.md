@@ -22,3 +22,8 @@ Implementation of a Kubernetes Pod with a sidecar container to collect 24-hour r
 * Deployment
   * service container - the service you want to collect TCP Dumps from
   * tcpdump container - the sidecar collecting the trace and sending to the volume
+
+## Further Information
+
+* [TCPDump Man Pages](https://www.tcpdump.org/manpages/tcpdump.1.html)
+* [Sidecar Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar)
